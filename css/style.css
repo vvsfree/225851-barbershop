@@ -1,3 +1,19 @@
+html,
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+h1, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
 body {
   font-family: "PT Sans Narrow", serif;
   font-size: 14px;
@@ -6,6 +22,7 @@ body {
   text-transform: uppercase;
   line-height: 1.7;
   text-align: left;
+
 }
 
 h1 {
@@ -18,8 +35,233 @@ h2 {
   line-height: 1.25;
 }
 
-article.catalog-item h1 {
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid crimson;
+}
+
+.main-header {
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid green;
+}
+
+.main-header-logo {
+  float: left;
+  width: 150px;
+  margin-right: 10px;
+
+  /*Для визуального выделения элемента*/
+  min-height: 72px;
+  outline: 2px solid darkblue;
+}
+
+.main-navigation {
+  float: left;
+  width: 630px;
+
+  /*Для визуального выделения элемента*/
+  min-height: 72px;
+  outline: 2px solid darkblue;
+}
+
+.user-block {
+  float: right;
+  width: 140px;
+
+  /*Для визуального выделения элемента*/
+  min-height: 72px;
+  outline: 2px solid darkblue;
+}
+
+.page {
+  background-image: url("../img/bg.png");
+  padding-top: 60px;
+  padding-bottom: 48px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid green;
+}
+
+.page-breadcrumbs {
+  margin-top: 14px;
+  margin-bottom: 56px;
+}
+
+.catalog-filter {
+  float: left;
+  width: 220px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid orange;
+}
+
+.catalog-items {
+  float: right;
+  width: 700px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid orangered;
+}
+
+.catalog-gallery {
+  font-size: 0;
+  margin-bottom: 26px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid mediumvioletred;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 220px;
+  vertical-align: top;
+  font-size: 14px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid darkblue;
+}
+
+.catalog-item-label {
+  padding: 16px;
+}
+
+.catalog-item h1 {
   font-size: 14px;
   line-height: 1.3;
+  margin-bottom: 14px;
   text-transform: none;
+}
+
+.catalog-item-brand {
+  text-transform: uppercase;
+}
+
+.catalog-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.catalog-pager {
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid darkgrey;
+}
+
+.item-view {
+  float: left;
+  width: 460px;
+  font-size: 0;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid orange;
+}
+
+.item-view > img {
+  margin-bottom: 20px;
+}
+
+.item-gallery {
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid darkgray;
+}
+
+.item-gallery a {
+  margin-right: 20px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid blue;
+}
+
+.item-gallery a:last-child {
+  margin-right: 0;
+}
+
+.item-info {
+  float: right;
+  width: 390px;
+  padding-top: 22px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid orangered;
+}
+
+.item-info-head {
+  margin-bottom: 34px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid darkblue;
+}
+
+.item-in-stock {
+  float: left;
+}
+
+.item-code {
+  float: right;
+}
+
+.item-buy-wrapper {
+  padding-top: 40px;
+  padding-bottom: 65px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid darkgoldenrod;
+}
+
+.item-buy {
+  width: 188px;
+  height: 43px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid darkblue;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid green;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  min-height: 90px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid darkblue;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  min-height: 90px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid darkblue;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  min-height: 90px;
+
+  /*Для визуального выделения элемента*/
+  outline: 2px solid darkblue;
 }
